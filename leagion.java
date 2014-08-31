@@ -795,7 +795,7 @@ class TLeague
     ht=lookup(first);
     at=lookup(second);
     first_leg=null;
-    if (eliminate&&(home_away||home_adv)&&first<second)
+    if (eliminate&&(home_away||home_adv))
     {
       first_leg=get_first_leg(second, first);
       result.first_leg=first_leg;
@@ -840,13 +840,46 @@ class TLeague
     result.h_regtime = home;
     result.a_regtime = away;
     require_ET=false;
-    if (first_leg!=null)
+    if (first_leg!=null&&eliminate)
     {
-      if (result.a_regtime+first_leg.home==result.h_regtime+first_leg.away)
+      if(first_leg.scorination_level==0)
       {
-        if (result.a_regtime==first_leg.away)
+        Out.println("You should not scorinate in a DeLorean!");
+      } else
+      {
+        if(first_leg.scorination_level==1)
+        {          
+          if((first_leg.a_regtime+result.h_regtime)==(first_leg.h_regtime+result.a_regtime))
+          {
+            if(first_leg.a_regtime==result.a_regtime)
+            {
+              require_ET=true;
+            }
+          }
+        } else 
         {
-          require_ET=true;
+          if(first_leg.scorination_level==2) //to those who use nodraws and CL-style elimination matches: WAAAAAAAAAAAAAARGH!!!! Seriously, I implement this because it is a possibility, but: WHAT ARE YOU THINKING‽ 
+          {
+            if((first_leg.a_et+result.h_regtime)==(first_leg.h_et+result.a_regtime))
+            {
+              if(first_leg.a_et==result.a_regtime)
+              {
+                require_ET=true;
+              }
+            }
+          }else
+          {
+            if(first_leg.scorination_level==1)
+            {
+              if((first_leg.a_pk+result.h_regtime)==(first_leg.h_pk+result.a_regtime))
+              {
+                if(first_leg.a_pk==result.a_regtime)
+                {
+                  require_ET=true;
+                }
+              }
+            }
+          } 
         }
       }
     }

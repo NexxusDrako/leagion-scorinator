@@ -357,9 +357,9 @@ static { // initializer
 	stack = new InputStream[8];
 	sp = 0;
 	buf = empty;
-        OS = Windows;
+//        OS = Windows;
 //        OS = MacOS;
-//        OS = Unix;
+        OS = Unix;
 	if (OS == Windows) eol = (char)13; else eol = (char)10;
 }
 
