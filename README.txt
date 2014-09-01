@@ -1,6 +1,6 @@
 Leagion
 
-Leagion is a football/field hockey scorinator created by Rejistania of NationStates for use by the NS Sports community. Rejistania has worked on the project since its birth in 2004 for use in World Cup 14. 
+Leagion is a football/field hockey scorinator created by Rejistania of NationStates for use by the NS Sports community. Rejistania has worked on the project since its birth in 2004 just after World Cup 13.
 They have given me permission to upload the source, which was open without a license and is now licensed under BSD. I have also offered to help develop new features, as I know Java, having done a small course in it in 2013.
 
 Instructions
