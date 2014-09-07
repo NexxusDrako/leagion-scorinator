@@ -869,7 +869,7 @@ class TLeague
             }
           }else
           {
-            if(first_leg.scorination_level==1)
+            if(first_leg.scorination_level==3)
             {
               if((first_leg.a_pk+result.h_regtime)==(first_leg.h_pk+result.a_regtime))
               {
