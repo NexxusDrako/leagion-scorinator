@@ -1,0 +1,11 @@
+=regions 1
+=teams 5
+=modifiers
+=autofixtures
+=2legs
+/
+1 100 Attack
+2 50 Semi-Attack
+3 0 Neutral
+4 -50 Semi-Defend
+5 -100 Defend
