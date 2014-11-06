@@ -4,5 +4,6 @@ jdk:
   - oraclejdk7
   - openjdk7
   - openjdk6
+script: "./make"
 after_script:
   - java leagion test1.lgn
