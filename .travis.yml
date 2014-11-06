@@ -4,4 +4,4 @@ jdk:
   - oraclejdk7
   - openjdk7
   - openjdk6
-script: "javac leagion.java"
+script: ./script/ci/run_build_unix.sh
