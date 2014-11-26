@@ -712,7 +712,7 @@ class TLeague
     if (prev==0)
     {
       result=s.indexOf(" ");
-      result=Integer.parseInt(s.substring(result+1, s.length()));
+      result=Integer.parseInt(s.substring(result+1, (s.length()-1)));
     }else
     {
       result=prev;
