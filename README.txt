@@ -1,4 +1,4 @@
-Leagion
+﻿Leagion
 
 Leagion is a football/field hockey scorinator created by Rejistania of NationStates for use by the NS Sports community. Rejistania has worked on the project since its birth in 2004 just after World Cup 13.
 They have given me permission to upload the source, which was open without a license (under the vague, unspoken agreement that the source is in the tarball for your convenience and that if it eliminates you 0:31, erases your harddisk, or does unspeakable things with your pet dog, it is your fault (do send pictures of the unspeakable things though, for... troubleshooting)) and is now licensed under BSD. I have also offered to help develop new features, as I know Java, having done a small course in it in 2013.
@@ -8,7 +8,7 @@ Instructions
 2. Unzip leagionwindows.zip or clone git repository.
 3. Open a terminal (Mac/Linux) or cmd.exe (Windows).
 4. Navigate (cd) to the Leagion folder.
-5. Run the command "java leagion".
+5. Run the command "javac leagion.java" then the command "java leagion".
 6. Follow the Prompts
 
 File Input
